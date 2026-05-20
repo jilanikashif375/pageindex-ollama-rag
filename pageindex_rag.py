@@ -1,10 +1,27 @@
+# Overview
+#
 # This script demonstrates a simple, minimal example of vectorless RAG with PageIndex.
+# You will learn how to:
+#
+# 1. Build a PageIndex tree structure for a document
+# 2. Perform reasoning-based retrieval using tree search
+# 3. Generate answers from the retrieved context
+#
+# Note: This is a minimal example intended to illustrate PageIndex's core idea and
+# philosophy, not its full capabilities. More advanced examples will be added soon.
 
 # Clone the repository
 # git clone https://github.com/VectifyAI/PageIndex.git
 # cd PageIndex
 
-# Install dependencies: pip install -r requirements.txt
+# Generate the PageIndex structure for your PDF
+# Run the following command to generate the document structure JSON:
+# python3 run_pageindex.py --pdf_path /path/to/your/document.pdf
+# Output will be saved in the results folder
+
+# Load the generated JSON structure
+# After the script runs successfully, a JSON file named after your PDF will be created
+# in the `results` folder. Copy it to the `input/` folder
 
 import ollama
 import json
